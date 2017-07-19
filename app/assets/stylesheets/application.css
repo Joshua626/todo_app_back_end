@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+html {
+    font-family:sans-serif;
+    color:blue;
+    text-align: center
+}
+.todo{
+    font-weight:bold;
+    color: #ff0000;
+    border-radius:25px;
+    font-size:22px;
+    padding:5px 150px 0px 0px;
+    
+}
+#submit-button{
+    font-size:18px;
+    box-shadow: 1px 1px 1px 
+    #90A4AE;
+}
+li{
+    padding:5px;
+    Margin-bottom:25px;
+}
+ul{
+    margin:0px 520px 100px 500px; /*top right bottom left */
+}
+body{
+ background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/light-column-particles_-ybovlvgs__F0000.png)
+}
