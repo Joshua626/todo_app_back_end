@@ -3,8 +3,8 @@ class TodoController < ApplicationController
     end
     
     def show
-        todo_id= '1'
-        if todo_id= '1'
+        todo_id= params[:id]
+        if todo_id=='1'
              @todo_description= "Do laundry"
         elsif todo_id == '2'       
              @todo_description= "Take out the trash"
