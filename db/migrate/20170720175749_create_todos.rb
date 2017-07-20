@@ -2,7 +2,7 @@ class CreateTodos < ActiveRecord::Migration
   def change
     create_table :todos do |t|
       t.string :description
-      t.false :complete
+      t.boolean :complete
       t.string :date
 
       t.timestamps null: false
