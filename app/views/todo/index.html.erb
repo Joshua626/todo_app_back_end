@@ -1,12 +1,15 @@
     <h1> Todo list Application</h1>
     <ul>
+        <% @todos.each do |todo| %>
         <li>
             <input type="checkbox">
-            <a href="show/1">
-            <span class="todo"> Do laundry </span></a>
-        </li>
-        <li>
-            <input type="checkbox">
+            <a href="show/<%=todo.id %>"><%= todo.description%></a>
+            <!-- <span class="todo"> Do laundry </span></a> --> 
+       <% end %>
+       </li>
+       
+       <!-- 
+           <input type="checkbox">
             <a href="show/2">
             <span class="todo"> Take out the trash </span> </a>
         </li> 
@@ -24,10 +27,11 @@
             <input type="checkbox">
             <a href="show/5">
             <span class="todo"> Do dishes</span> </a>
-        </li>
+        </li>-->
     </ul>
         <div id="new-todo-block"> 
              <input id="text" type= "text" placeholder="enter task">
-             <input id="submit-button" type="submit" value="Add to do">
+             <a href= "/todo/new" class="button add-new-todo-button" id="add-new-todo-button"> Add a todo </a>
+            <!-- <input id="submit-button" type="submit" value="Add to do"> -->
         </div>
          

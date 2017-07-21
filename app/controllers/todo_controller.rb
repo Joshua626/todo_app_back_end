@@ -1,7 +1,6 @@
 class TodoController < ApplicationController
     def index
     end
-    
     def show
         @todo = Todo.find_by_id(params[:id])     
     end
@@ -18,7 +17,7 @@ class TodoController < ApplicationController
     end
     def update
         t = Todo.find_by_id(params['id'])
-        t.description = ['description']
+        t.description = params['description']
         t.save
         redirect_to "/todo/show/#{ t.id }"
     end
@@ -26,5 +25,8 @@ class TodoController < ApplicationController
         t = Todo.find_by_id(params[:id])
         t.destroy
         redirect_to "/todo/index"
+    end
+    def index 
+        @todos = Todo.all
     end
 end

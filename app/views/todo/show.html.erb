@@ -1,5 +1,5 @@
 <h3>Todo #<%= params[:id] %></h3>
 <h1><%= @todo.description %></h1>
-      <a href="index.html"> back</a>
-      <a href="/todo/edit/<%= @todo.id %>" class="button edit-todo-button">edit</a>
-      <a href="#">delete</a>
+      <a href="/todo/index">Back</a>
+      <a href="/todo/edit/<%= @todo.id %>" class="button edit-todo-button">Edit</a>
+      <a href="/todo/index">Delete</a>
